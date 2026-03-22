@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SRKPG College</title>
+<title>SRKPG College Workshops</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<!-- ===== HEADER ===== -->
+<header class="main-header">
 
-<!-- 🟢 LOGO ADDED -->
+<div class="top-bar">
 <img src="logosrkp.png" class="logo">
 
-<!-- 🟢 COLLEGE NAME + BUTTON -->
-<div class="header-flex">
-
+<div class="title-box">
 <h1>
-<a href="https://hte.rajasthan.gov.in/college/gckishangarh" style="color:white;text-decoration:none;">
+<a href="https://hte.rajasthan.gov.in/college/gckishangarh" class="title-link">
 Shri Ratanlal Kanwarlal Patni Government PG College, Kishangarh
 </a>
 </h1>
+
+<h3>Workshops and Competitions Organised by the College</h3>
+<p class="owner">By Prabhat Yashi (Assistant Professor of English)</p>
+</div>
 
 <a href="jpshukla.html">
 <button class="principal-btn">Dr. J.P. Shukla, Principal</button>
@@ -28,56 +32,90 @@ Shri Ratanlal Kanwarlal Patni Government PG College, Kishangarh
 
 </div>
 
-<h2>Workshops and Competitions Organised by the College</h2>
-<p>By Prabhat Yashi (Assistant Professor of English)</p>
-
 </header>
 
-<nav>
+<!-- ===== NAV ===== -->
+<nav class="main-nav">
 <a href="about.html">About Us</a>
 <a href="news.html">News</a>
 <a href="competitions.html">Competitions</a>
 <a href="creativity.html">Students Creativity Corner</a>
 <a href="more.html">More</a>
-<a class="special" href="https://www.prabhatyashi.com">More by Prabhat Sir</a>
+<a href="https://www.prabhatyashi.com" class="highlight-btn">More by Prabhat Sir</a>
 </nav>
 
+<!-- ===== COUNTDOWN ===== -->
+<section class="countdown-section">
 <h2>AI Workshop Countdown</h2>
-<div id="countdown"></div>
+<div id="countdown" class="countdown-box"></div>
+</section>
 
-<div class="workshops">
+<!-- ===== WORKSHOPS ===== -->
+<section class="workshop-section">
 
-<div class="card">
-<img src="aiworkshop.png" class="banner">
+<div class="workshop-card">
+<img src="aiworkshop.png" class="workshop-img">
+
 <h2>Artificial Intelligence Foundation Course</h2>
-<p>Master AI tools, automation, and real-world digital skills.</p>
 
+<p>
+Master AI tools, build websites, create projects and explore future-ready skills.
+</p>
+
+<div class="btn-group">
 <a href="ai-details.html"><button>Course Details</button></a>
 <a href="ai-testimonials.html"><button>Testimonials</button></a>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSesxwZz1s1D039zZBL0gFqqdkjTCdC3IlqLiAAXVKj15O2bJw/viewform?usp=header"><button>Register Now</button></a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSesxwZz1s1D039zZBL0gFqqdkjTCdC3IlqLiAAXVKj15O2bJw/viewform?usp=header">
+<button class="register">Register Now</button>
+</a>
 </div>
 
-<div class="card">
-<img src="seworkshop.png" class="banner">
-<h2>Spoken English & Personality Development</h2>
-<p>Build confidence, fluency and powerful personality.</p>
+</div>
 
+<div class="workshop-card">
+
+<img src="seworkshop.png" class="workshop-img">
+
+<h2>Spoken English, Personality Development & Interview Guidance</h2>
+
+<p>
+Build confidence, communication skills and prepare for real-life success.
+</p>
+
+<div class="btn-group">
 <a href="spoken-details.html"><button>Course Details</button></a>
 <a href="spoken-testimonials.html"><button>Testimonials</button></a>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfXLbCnHAYKrRwozDdaK4bzW_go8gjlKFQhyS6yaJ952_eTyg/viewform?usp=publish-editor"><button>Register Now</button></a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfXLbCnHAYKrRwozDdaK4bzW_go8gjlKFQhyS6yaJ952_eTyg/viewform?usp=publish-editor">
+<button class="register">Register Now</button>
+</a>
 </div>
 
 </div>
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact-section">
 
 <h2>Contact Us</h2>
-<p>WhatsApp: 9509851329</p>
-<p>Email: yashiprabhat93@gmail.com</p>
+
+<p>📱 WhatsApp: <b>9509851329</b></p>
+<p>📧 Email: <b>yashiprabhat93@gmail.com</b></p>
 
 <a href="https://wa.me/919509851329">
-<button>Chat on WhatsApp</button>
+<button class="whatsapp-btn">Chat on WhatsApp</button>
 </a>
 
-<p>You will receive a quick response. We are committed to your success.</p>
+<p class="assurance">
+You will receive a quick response. We are committed to guiding you towards success.
+</p>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+<p>© 2026 | Prabhat Yashi | SRKPG College Kishangarh</p>
+</footer>
 
 <script src="script.js"></script>
 
