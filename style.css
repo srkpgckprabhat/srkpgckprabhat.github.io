@@ -1,32 +1,114 @@
-/* ===== HEADER LOGO + BUTTON ===== */
-
-.logo {
-width: 100px;
-height: 100px;
-border-radius: 50%;
-margin-top: 10px;
+body {
+margin:0;
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,#001f3f,#0074D9);
+color:white;
+text-align:center;
+font-size:18px;
 }
 
-.header-flex {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 10px;
+h1 {font-size:32px;}
+h2 {font-size:26px;}
+p, li {font-size:18px;}
+
+header {
+padding:20px;
+animation:fadeIn 1.5s;
 }
 
-.principal-btn {
-background: #ffcc00;
-color: black;
-font-weight: bold;
-padding: 10px 15px;
-border-radius: 8px;
+nav {
+background:rgba(0,0,0,0.3);
+padding:10px;
 }
 
-/* Desktop adjustment */
-@media (min-width: 768px) {
-.header-flex {
-flex-direction: row;
-justify-content: center;
-gap: 20px;
+nav a {
+margin:8px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
 }
+
+.special {
+background:yellow;
+color:black;
+padding:6px 10px;
+border-radius:5px;
+}
+
+.card {
+background:rgba(255,255,255,0.1);
+margin:20px;
+padding:20px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover {transform:scale(1.05);}
+
+.banner {
+width:100%;
+border-radius:10px;
+}
+
+button {
+padding:12px 20px;
+margin:8px;
+font-size:16px;
+background:yellow;
+color:black;
+border:none;
+border-radius:6px;
+}
+
+.profile {
+width:220px;
+border-radius:50%;
+margin:20px;
+}
+
+.intro {margin:20px;}
+
+.workshops {
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.news-grid {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:10px;
+padding:20px;
+}
+
+.news-grid img {
+width:100%;
+transition:0.3s;
+}
+.news-grid img:hover {transform:scale(1.1);}
+
+.testimonial-container {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.testimonial-card {
+background:rgba(255,255,255,0.15);
+padding:20px;
+border-radius:10px;
+}
+
+.more-container {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+@keyframes fadeIn {
+from {opacity:0;}
+to {opacity:1;}
 }
